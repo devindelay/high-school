@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+#include <array> 
+#include <string>
+int diff (string one,string two){
+     int sum=0;
+    for (unsigned i=0; i<one.size();i++){
+    sum+=abs(int(one[i])- int(two[i]));
+    //cout<< sum<<endl;
+    }
+    return sum;
+}
+int main() {
+   cout << diff("cat","dog");
+   
+    
+	return 0;
+}
